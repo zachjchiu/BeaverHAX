@@ -37,3 +37,20 @@ while logged_in == False:
     else:
         print("Incorrect username or password. Please try again.")
 print("Welcome to the program.")
+stop_number = False
+even_number = []
+while stop_number == False:
+    number_list = input("Enter a number or 'stop': ")
+    if number_list == "stop":
+        stop_number = True
+        continue
+    else:
+        even_number.append(int(number_list))
+print(even_number)
+for number in even_number:
+    if number > 10:
+        exit()
+    elif number % 2 == 0:
+        print(number)
+    else:
+        continue
